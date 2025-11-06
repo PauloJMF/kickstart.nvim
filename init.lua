@@ -178,7 +178,7 @@ vim.keymap.set('n', '<leader>Q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('n', '<leader>u', ':undo<CR>', { desc = 'Undo Changes', noremap = true, silent = true })
 vim.keymap.set('n', '<leader>w', ':w<CR>', { desc = 'Write Buffer' })
 vim.keymap.set('n', '<leader>q', ':q<CR>', { desc = 'Quit' })
-vim.keymap.set('n', '<leader>e', '<cmd>:Explore<CR>', { desc = 'File Explore' })
+-- vim.keymap.set('n', '<leader>e', '<cmd>:Explore<CR>', { desc = 'File Explore' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -981,7 +981,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
+  require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
